@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: darkred;
+    }
+
+    h3 {
+      color: darkred;
+    }
+
+    .container {
+    max-width: 992px;
+    margin: auto;
+    }
+
+    .row {
+    width: 100%;
+    display: flex;
+    }
+
+    .column {
+    flex-basis: calc(100% / 3);
+    padding-left:  8px;
+    padding-right: 8px;
+    }
+    img {
+      width: 100%;
+      height: 70%;
+    }
+    p {
+      font-family: "Times New Roman", Times, serif;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Now In Theaters</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="https://m.media-amazon.com/images/M/MV5BMmIwZDMyYWUtNTU0ZS00ODJhLTg2ZmEtMTk5ZmYzODcxODYxXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg"
+          alt="Top Gun: Maverick">
+        <h3>Top Gun: Maverick</h3>
+        <p>After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing
+          the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.</p>
+      </div>
+      <div class="column">
+        <img src="https://dx35vtwkllhj9.cloudfront.net/a24films/everything-everywhere-all-at-once/images/regions/us/onesheet.jpg"
+          alt="Everything Everywhere All at Once">
+        <h3>Everything Everywhere All at Once</h3>
+        <p>An aging Chinese immigrant is swept up in an insane adventure, where she alone can save the world by exploring other
+          universes connecting with the lives she could have led.</p>
+      </div>
+      <div class="column">
+        <img src="https://i.pinimg.com/736x/12/81/6a/12816a0331cb24a1cd587c8fc74a74ee.jpg" alt="Jurassic World Dominion">
+        <h3>Jurassic World Dominion</h3>
+        <p>Four years after the destruction of Isla Nublar, dinosaurs now live--and hunt--alongside humans all over the world. This
+        fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex
+        predators on a planet they now share with history's most fearsome creatures in a new Era.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
